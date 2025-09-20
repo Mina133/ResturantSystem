@@ -1,0 +1,137 @@
+<svg width="1200" height="400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Restaurant icon gradient -->
+    <linearGradient id="iconGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff6b6b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffa500;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Text shadow filter -->
+    <filter id="textShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="rgba(0,0,0,0.3)"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="400" fill="url(#bgGradient)"/>
+  
+  <!-- Decorative elements -->
+  <circle cx="100" cy="80" r="30" fill="rgba(255,255,255,0.1)"/>
+  <circle cx="1100" cy="320" r="40" fill="rgba(255,255,255,0.1)"/>
+  <circle cx="200" cy="350" r="25" fill="rgba(255,255,255,0.1)"/>
+  <circle cx="1000" cy="100" r="35" fill="rgba(255,255,255,0.1)"/>
+  
+  <!-- Docker Container -->
+  <g transform="translate(50, 80)">
+    <!-- Container Box -->
+    <rect x="0" y="0" width="200" height="140" rx="10" fill="rgba(255,255,255,0.9)" stroke="#2496ed" stroke-width="3"/>
+    
+    <!-- Docker Logo -->
+    <g transform="translate(20, 20)">
+      <rect x="0" y="0" width="40" height="30" rx="3" fill="#2496ed"/>
+      <text x="20" y="20" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white" text-anchor="middle">🐳</text>
+    </g>
+    
+    <!-- Container Content -->
+    <text x="70" y="25" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">Restaurant System</text>
+    <text x="70" y="40" font-family="Arial, sans-serif" font-size="10" fill="#666">Flask + SQLite</text>
+    <text x="70" y="55" font-family="Arial, sans-serif" font-size="10" fill="#666">Port: 5000</text>
+    
+    <!-- Status Indicator -->
+    <circle cx="180" cy="30" r="8" fill="#28a745"/>
+    <text x="180" y="35" font-family="Arial, sans-serif" font-size="8" fill="white" text-anchor="middle">✓</text>
+    
+    <!-- Container Details -->
+    <rect x="10" y="70" width="180" height="60" rx="5" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1"/>
+    <text x="15" y="85" font-family="Arial, sans-serif" font-size="9" fill="#495057">📦 Containerized Deployment</text>
+    <text x="15" y="100" font-family="Arial, sans-serif" font-size="8" fill="#6c757d">• Docker Ready</text>
+    <text x="15" y="112" font-family="Arial, sans-serif" font-size="8" fill="#6c757d">• Kubernetes Compatible</text>
+    <text x="15" y="124" font-family="Arial, sans-serif" font-size="8" fill="#6c757d">• Cloud Deploy Ready</text>
+  </g>
+  
+  <!-- Arabic title -->
+  <text x="300" y="150" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="white" filter="url(#textShadow)">
+    نظام إدارة المطاعم المحسن
+  </text>
+  
+  <!-- English subtitle -->
+  <text x="300" y="190" font-family="Arial, sans-serif" font-size="24" fill="rgba(255,255,255,0.9)" filter="url(#textShadow)">
+    Enhanced Arabic Restaurant Management System
+  </text>
+  
+  <!-- Features list -->
+  <g transform="translate(300, 220)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="16" fill="rgba(255,255,255,0.8)">
+      🍽️ نقطة البيع (POS) • 📊 تقارير شاملة • 👥 إدارة العملاء • 📦 إدارة المخزون
+    </text>
+    <text x="0" y="25" font-family="Arial, sans-serif" font-size="16" fill="rgba(255,255,255,0.8)">
+      💰 إدارة الخزينة • ⏰ نظام الورديات • 🚚 التوصيل • 🔐 نظام الصلاحيات
+    </text>
+  </g>
+  
+  <!-- Tech stack -->
+  <g transform="translate(300, 280)">
+    <rect x="0" y="0" width="200" height="40" rx="20" fill="rgba(255,255,255,0.2)" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+    <text x="100" y="25" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">
+      Flask • SQLite • Bootstrap • RTL Support
+    </text>
+  </g>
+  
+  <!-- Status badge -->
+  <g transform="translate(300, 340)">
+    <rect x="0" y="0" width="120" height="30" rx="15" fill="#28a745"/>
+    <text x="60" y="20" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle" font-weight="bold">
+      ✅ جاهز للاستخدام
+    </text>
+  </g>
+  
+  <!-- Live demo badge -->
+  <g transform="translate(450, 340)">
+    <rect x="0" y="0" width="120" height="30" rx="15" fill="#007bff"/>
+    <text x="60" y="20" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle" font-weight="bold">
+      🌐 عرض مباشر
+    </text>
+  </g>
+  
+  <!-- Decorative food items -->
+  <g transform="translate(800, 100)">
+    <!-- Burger -->
+    <ellipse cx="0" cy="0" rx="25" ry="15" fill="#8B4513"/>
+    <ellipse cx="0" cy="-5" rx="20" ry="8" fill="#FFD700"/>
+    <ellipse cx="0" cy="-10" rx="18" ry="6" fill="#228B22"/>
+    <ellipse cx="0" cy="-15" rx="22" ry="7" fill="#FF6347"/>
+  </g>
+  
+  <g transform="translate(900, 150)">
+    <!-- Coffee cup -->
+    <rect x="0" y="0" width="20" height="25" rx="3" fill="rgba(255,255,255,0.9)"/>
+    <rect x="2" y="2" width="16" height="20" rx="2" fill="#8B4513"/>
+    <rect x="18" y="5" width="8" height="3" rx="1" fill="rgba(255,255,255,0.9)"/>
+    <circle cx="5" cy="5" r="2" fill="rgba(255,255,255,0.3)"/>
+  </g>
+  
+  <g transform="translate(850, 200)">
+    <!-- Pizza slice -->
+    <path d="M0,0 L30,0 L15,25 Z" fill="#FFD700"/>
+    <circle cx="8" cy="8" r="2" fill="#FF6347"/>
+    <circle cx="20" cy="12" r="2" fill="#228B22"/>
+    <circle cx="15" cy="18" r="2" fill="#FF6347"/>
+  </g>
+  
+  <!-- Version info -->
+  <text x="50" y="380" font-family="Arial, sans-serif" font-size="12" fill="rgba(255,255,255,0.6)">
+    Version 2024.1 • Python 3.7+ • Flask 3.1.1
+  </text>
+  
+  <!-- GitHub corner -->
+  <g transform="translate(1150, 50)">
+    <circle cx="0" cy="0" r="20" fill="rgba(255,255,255,0.2)"/>
+    <text x="0" y="5" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">📁</text>
+  </g>
+</svg>

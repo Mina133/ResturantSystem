@@ -1,3 +1,7 @@
+<div align="center">
+  <img src="github-banner.svg" alt="نظام إدارة المطاعم المحسن" width="100%">
+</div>
+
 # نظام إدارة المطاعم المحسن - الإصدار العربي الكامل
 
 ## 🌟 نظرة عامة
@@ -6,6 +10,60 @@
 ## 🚀 الرابط المباشر للنظام
 **https://dyh6i3c067lv.manus.space**
 
+[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-Online-brightgreen?style=for-the-badge)](https://dyh6i3c067lv.manus.space)
+[![Docker](https://img.shields.io/badge/🐳_Docker-Ready-blue?style=for-the-badge&logo=docker)](https://docker.com)
+[![Kubernetes](https://img.shields.io/badge/☸️_Kubernetes-Compatible-blue?style=for-the-badge&logo=kubernetes)](https://kubernetes.io)
+[![Python](https://img.shields.io/badge/Python-3.7+-blue?style=for-the-badge&logo=python)](https://python.org)
+[![Flask](https://img.shields.io/badge/Flask-3.1.1-green?style=for-the-badge&logo=flask)](https://flask.palletsprojects.com)
+[![SQLite](https://img.shields.io/badge/SQLite-Database-lightblue?style=for-the-badge&logo=sqlite)](https://sqlite.org)
+[![RTL](https://img.shields.io/badge/RTL-Arabic_Support-orange?style=for-the-badge)](https://github.com)
+[![License](https://img.shields.io/badge/License-Free_Use-green?style=for-the-badge)](https://github.com)
+
+## ✨ الميزات الرئيسية
+
+<table>
+<tr>
+<td width="50%">
+
+### 🍽️ إدارة المطعم
+- **نقطة البيع (POS)** - نظام بيع متقدم
+- **إدارة القائمة** - أصناف متنوعة مع أسعار
+- **نظام الطلبات** - تتبع الطلبات في الوقت الفعلي
+- **إدارة العملاء** - قاعدة بيانات شاملة
+
+</td>
+<td width="50%">
+
+### 📊 التقارير والإحصائيات
+- **تقارير المبيعات** - تحليل الأداء اليومي والشهري
+- **إحصائيات المخزون** - مراقبة الأصناف والكميات
+- **تقارير العملاء** - تحليل سلوك العملاء
+- **تقارير مالية** - الإيرادات والمصروفات
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+### 👥 إدارة المستخدمين
+- **نظام الصلاحيات** - أدوار متعددة ومتدرجة
+- **تسجيل الدخول الآمن** - حماية البيانات
+- **إدارة الورديات** - تتبع أوقات العمل
+- **ملفات شخصية** - معلومات المستخدمين
+
+</td>
+<td width="50%">
+
+### 🚚 التوصيل والخدمات
+- **إدارة الطيارين** - تتبع عمال التوصيل
+- **نظام التوصيل** - إدارة الطلبات الخارجية
+- **تتبع الطلبات** - حالة التوصيل في الوقت الفعلي
+- **حسابات الطيارين** - عمولات ومكافآت
+
+</td>
+</tr>
+</table>
+
 ## 📋 المتطلبات التقنية
 - Python 3.7 أو أحدث
 - Flask 3.1.1
@@ -13,9 +71,46 @@
 - SQLite3 (مدمج مع Python)
 - متصفح ويب حديث
 
-## 🔧 طريقة التشغيل
+## 🚀 البدء السريع
 
-### 1. تشغيل النظام محلياً
+### 🐳 Containerized Deployment (Recommended)
+
+#### Using Docker
+```bash
+# Clone the repository
+git clone https://github.com/your-username/restaurant-management-system.git
+cd restaurant-management-system
+
+# Build the Docker image
+docker build -t restaurant-management-system .
+
+# Run the container
+docker run -p 5000:5000 restaurant-management-system
+```
+
+#### Using Docker Compose
+```bash
+# Start all services
+docker-compose up -d
+
+# View logs
+docker-compose logs -f
+
+# Stop services
+docker-compose down
+```
+
+#### Using Kubernetes
+```bash
+# Apply Kubernetes manifests
+kubectl apply -f k8s-deployment.yaml
+
+# Check deployment status
+kubectl get pods
+kubectl get services
+```
+
+### 1. تشغيل النظام محلياً (بدون Docker)
 ```bash
 # فك ضغط الملف
 unzip restaurant_management_system.zip
@@ -36,6 +131,70 @@ python src/main.py
 
 ### 2. الوصول للنظام
 افتح المتصفح وانتقل إلى: `http://localhost:5000`
+
+## 📸 لقطات الشاشة
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <img src="https://via.placeholder.com/400x250/667eea/ffffff?text=تسجيل+الدخول" alt="صفحة تسجيل الدخول" width="100%">
+        <br><strong>صفحة تسجيل الدخول</strong>
+      </td>
+      <td align="center">
+        <img src="https://via.placeholder.com/400x250/764ba2/ffffff?text=لوحة+التحكم" alt="لوحة التحكم" width="100%">
+        <br><strong>لوحة التحكم الرئيسية</strong>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">
+        <img src="https://via.placeholder.com/400x250/ff6b6b/ffffff?text=نقطة+البيع" alt="نقطة البيع" width="100%">
+        <br><strong>نقطة البيع (POS)</strong>
+      </td>
+      <td align="center">
+        <img src="https://via.placeholder.com/400x250/28a745/ffffff?text=التقارير" alt="التقارير" width="100%">
+        <br><strong>التقارير والإحصائيات</strong>
+      </td>
+    </tr>
+  </table>
+</div>
+
+> **ملاحظة:** هذه صور تجريبية. يمكنك رؤية النظام الحقيقي عبر [الرابط المباشر](https://dyh6i3c067lv.manus.space)
+
+## 🏗️ Containerized Deployment Architecture
+
+<div align="center">
+  <img src="deployment-diagram.svg" alt="Containerized Deployment Architecture" width="100%">
+</div>
+
+### 📦 Container Features
+
+| Feature | Description |
+|---------|-------------|
+| **🐳 Docker Ready** | Pre-configured Dockerfile for easy deployment |
+| **☸️ Kubernetes Compatible** | Full K8s manifests for production deployment |
+| **🐙 Docker Compose** | Multi-service orchestration with Nginx & Redis |
+| **☁️ Cloud Ready** | Compatible with AWS, GCP, Azure, and other cloud providers |
+| **🔒 Security** | Environment variables for secrets management |
+| **📊 Monitoring** | Health checks and logging configured |
+| **🔄 Auto-restart** | Automatic container restart on failure |
+| **💾 Persistent Storage** | Database and logs persistence |
+
+### 🚀 Quick Deploy Commands
+
+```bash
+# Docker (Single Container)
+docker run -d -p 5000:5000 --name restaurant-system restaurant-management-system
+
+# Docker Compose (Multi-Service)
+docker-compose up -d
+
+# Kubernetes (Production)
+kubectl apply -f k8s-deployment.yaml
+
+# Cloud Deploy (Example: AWS ECS)
+aws ecs create-service --cluster my-cluster --service-name restaurant-system --task-definition restaurant-system
+```
 
 ## 🔐 حسابات المستخدمين
 
@@ -253,6 +412,22 @@ cursor.execute('''
 - تطوير تطبيق موبايل مكمل
 - إضافة ميزات الذكاء الاصطناعي
 
+## 🤝 المساهمة
+
+نرحب بمساهماتكم! يمكنكم المساهمة في تطوير النظام من خلال:
+
+- 🐛 **الإبلاغ عن الأخطاء** - استخدم [Issues](https://github.com/your-repo/issues) للإبلاغ عن المشاكل
+- 💡 **اقتراح ميزات جديدة** - شاركنا أفكاركم لتحسين النظام
+- 🔧 **المساهمة في الكود** - أرسلوا Pull Requests للميزات الجديدة
+- 📝 **تحسين الوثائق** - ساعدوا في تحسين هذا الملف والوثائق
+
+### كيفية المساهمة:
+1. Fork المشروع
+2. إنشاء فرع جديد (`git checkout -b feature/AmazingFeature`)
+3. Commit التغييرات (`git commit -m 'Add some AmazingFeature'`)
+4. Push للفرع (`git push origin feature/AmazingFeature`)
+5. فتح Pull Request
+
 ## 📄 الترخيص
 هذا النظام مطور خصيصاً لك ويمكنك استخدامه وتعديله بحرية كاملة.
 
@@ -262,6 +437,15 @@ cursor.execute('''
 - يمكن توسيع النظام وإضافة المزيد من الميزات
 - الكود مكتوب بطريقة واضحة وقابلة للفهم والتطوير
 
+## ⭐ إذا أعجبك المشروع
+
+إذا وجدت هذا المشروع مفيداً، لا تنس إعطاؤه نجمة ⭐!
+
 ---
-**تم تطوير هذا النظام بواسطة Manus AI - سبتمبر 2024**
+
+<div align="center">
+  <strong>تم تطوير هذا النظام بواسطة Manus AI - سبتمبر 2024</strong>
+  <br>
+  <sub>نظام إدارة المطاعم المحسن - الإصدار العربي الكامل</sub>
+</div>
 

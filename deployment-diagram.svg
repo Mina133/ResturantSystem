@@ -1,0 +1,137 @@
+<svg width="1200" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9fa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e9ecef;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="containerGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="dockerGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2496ed;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e7bb8;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="2" dy="2" stdDeviation="4" flood-color="rgba(0,0,0,0.2)"/>
+    </filter>
+  </defs>
+  
+  <rect width="1200" height="600" fill="url(#bgGradient)"/>
+  
+  <!-- Title -->
+  <text x="600" y="40" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#333" text-anchor="middle">
+    🐳 نظام إدارة المطاعم - Containerized Deployment
+  </text>
+  
+  <!-- Docker Container -->
+  <g transform="translate(100, 80)">
+    <!-- Container Box -->
+    <rect x="0" y="0" width="1000" height="400" rx="15" fill="url(#containerGradient)" filter="url(#shadow)"/>
+    <rect x="10" y="10" width="980" height="380" rx="10" fill="rgba(255,255,255,0.95)"/>
+    
+    <!-- Docker Logo -->
+    <g transform="translate(30, 30)">
+      <rect x="0" y="0" width="60" height="40" rx="5" fill="url(#dockerGradient)"/>
+      <text x="30" y="25" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">Docker</text>
+    </g>
+    
+    <!-- Container Title -->
+    <text x="120" y="50" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#333">
+      Restaurant Management System Container
+    </text>
+    
+    <!-- Container Details -->
+    <g transform="translate(30, 80)">
+      <!-- Python/Flask App -->
+      <rect x="0" y="0" width="300" height="120" rx="8" fill="#e3f2fd" stroke="#2196f3" stroke-width="2"/>
+      <text x="10" y="20" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1976d2">🐍 Python Flask Application</text>
+      <text x="10" y="40" font-family="Arial, sans-serif" font-size="12" fill="#333">• Flask 3.1.1</text>
+      <text x="10" y="55" font-family="Arial, sans-serif" font-size="12" fill="#333">• SQLite Database</text>
+      <text x="10" y="70" font-family="Arial, sans-serif" font-size="12" fill="#333">• Arabic RTL Support</text>
+      <text x="10" y="85" font-family="Arial, sans-serif" font-size="12" fill="#333">• Bootstrap UI</text>
+      <text x="10" y="100" font-family="Arial, sans-serif" font-size="12" fill="#333">• Port: 5000</text>
+      
+      <!-- Database -->
+      <rect x="320" y="0" width="300" height="120" rx="8" fill="#e8f5e8" stroke="#4caf50" stroke-width="2"/>
+      <text x="330" y="20" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2e7d32">🗄️ SQLite Database</text>
+      <text x="330" y="40" font-family="Arial, sans-serif" font-size="12" fill="#333">• restaurant_arabic_fixed.db</text>
+      <text x="330" y="55" font-family="Arial, sans-serif" font-size="12" fill="#333">• Users, Items, Sales</text>
+      <text x="330" y="70" font-family="Arial, sans-serif" font-size="12" fill="#333">• Inventory Management</text>
+      <text x="330" y="85" font-family="Arial, sans-serif" font-size="12" fill="#333">• Reports & Analytics</text>
+      <text x="330" y="100" font-family="Arial, sans-serif" font-size="12" fill="#333">• Persistent Storage</text>
+      
+      <!-- Static Files -->
+      <rect x="640" y="0" width="300" height="120" rx="8" fill="#fff3e0" stroke="#ff9800" stroke-width="2"/>
+      <text x="650" y="20" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#f57c00">📁 Static Assets</text>
+      <text x="650" y="40" font-family="Arial, sans-serif" font-size="12" fill="#333">• HTML Templates</text>
+      <text x="650" y="55" font-family="Arial, sans-serif" font-size="12" fill="#333">• CSS Styles</text>
+      <text x="650" y="70" font-family="Arial, sans-serif" font-size="12" fill="#333">• JavaScript Files</text>
+      <text x="650" y="85" font-family="Arial, sans-serif" font-size="12" fill="#333">• Images & Icons</text>
+      <text x="650" y="100" font-family="Arial, sans-serif" font-size="12" fill="#333">• RTL Support Files</text>
+    </g>
+    
+    <!-- Docker Commands -->
+    <g transform="translate(30, 220)">
+      <rect x="0" y="0" width="940" height="80" rx="8" fill="#f8f9fa" stroke="#6c757d" stroke-width="1"/>
+      <text x="10" y="20" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#495057">🚀 Docker Commands</text>
+      
+      <text x="10" y="40" font-family="monospace" font-size="11" fill="#28a745"># Build the container</text>
+      <text x="10" y="55" font-family="monospace" font-size="11" fill="#007bff">docker build -t restaurant-system .</text>
+      
+      <text x="400" y="40" font-family="monospace" font-size="11" fill="#28a745"># Run the container</text>
+      <text x="400" y="55" font-family="monospace" font-size="11" fill="#007bff">docker run -p 5000:5000 restaurant-system</text>
+    </g>
+    
+    <!-- Environment Variables -->
+    <g transform="translate(30, 320)">
+      <rect x="0" y="0" width="460" height="50" rx="8" fill="#f1f3f4" stroke="#5f6368" stroke-width="1"/>
+      <text x="10" y="20" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#5f6368">🔧 Environment Variables</text>
+      <text x="10" y="35" font-family="monospace" font-size="10" fill="#007bff">FLASK_ENV=production | SECRET_KEY=your-secret-key | DEBUG=False</text>
+    </g>
+    
+    <!-- Ports -->
+    <g transform="translate(510, 320)">
+      <rect x="0" y="0" width="460" height="50" rx="8" fill="#e8f5e8" stroke="#4caf50" stroke-width="1"/>
+      <text x="10" y="20" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2e7d32">🌐 Exposed Ports</text>
+      <text x="10" y="35" font-family="monospace" font-size="10" fill="#007bff">5000:5000 (HTTP) | 443:443 (HTTPS) | 80:80 (Redirect)</text>
+    </g>
+  </g>
+  
+  <!-- Deployment Options -->
+  <g transform="translate(50, 500)">
+    <text x="0" y="20" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#333">📦 Deployment Options:</text>
+    
+    <!-- Docker Hub -->
+    <g transform="translate(0, 30)">
+      <rect x="0" y="0" width="200" height="40" rx="5" fill="#0db7ed" stroke="#0db7ed" stroke-width="2"/>
+      <text x="100" y="15" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">🐳 Docker Hub</text>
+      <text x="100" y="30" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">docker pull restaurant-system</text>
+    </g>
+    
+    <!-- Kubernetes -->
+    <g transform="translate(220, 30)">
+      <rect x="0" y="0" width="200" height="40" rx="5" fill="#326ce5" stroke="#326ce5" stroke-width="2"/>
+      <text x="100" y="15" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">☸️ Kubernetes</text>
+      <text x="100" y="30" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">kubectl apply -f k8s/</text>
+    </g>
+    
+    <!-- Docker Compose -->
+    <g transform="translate(440, 30)">
+      <rect x="0" y="0" width="200" height="40" rx="5" fill="#2496ed" stroke="#2496ed" stroke-width="2"/>
+      <text x="100" y="15" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">🐙 Docker Compose</text>
+      <text x="100" y="30" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">docker-compose up -d</text>
+    </g>
+    
+    <!-- Cloud Deploy -->
+    <g transform="translate(660, 30)">
+      <rect x="0" y="0" width="200" height="40" rx="5" fill="#ff6b35" stroke="#ff6b35" stroke-width="2"/>
+      <text x="100" y="15" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">☁️ Cloud Deploy</text>
+      <text x="100" y="30" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">AWS/GCP/Azure Ready</text>
+    </g>
+  </g>
+</svg>

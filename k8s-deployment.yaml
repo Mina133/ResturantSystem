@@ -1,0 +1,92 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: restaurant-management-system
+  labels:
+    app: restaurant-management-system
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: restaurant-management-system
+  template:
+    metadata:
+      labels:
+        app: restaurant-management-system
+    spec:
+      containers:
+      - name: restaurant-system
+        image: restaurant-management-system:latest
+        ports:
+        - containerPort: 5000
+        env:
+        - name: FLASK_ENV
+          value: "production"
+        - name: SECRET_KEY
+          valueFrom:
+            secretKeyRef:
+              name: restaurant-secrets
+              key: secret-key
+        - name: DEBUG
+          value: "False"
+        resources:
+          requests:
+            memory: "256Mi"
+            cpu: "250m"
+          limits:
+            memory: "512Mi"
+            cpu: "500m"
+        livenessProbe:
+          httpGet:
+            path: /
+            port: 5000
+          initialDelaySeconds: 30
+          periodSeconds: 10
+        readinessProbe:
+          httpGet:
+            path: /
+            port: 5000
+          initialDelaySeconds: 5
+          periodSeconds: 5
+        volumeMounts:
+        - name: database-storage
+          mountPath: /app/src/database
+      volumes:
+      - name: database-storage
+        persistentVolumeClaim:
+          claimName: restaurant-database-pvc
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: restaurant-management-service
+spec:
+  selector:
+    app: restaurant-management-system
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 5000
+  type: LoadBalancer
+
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: restaurant-database-pvc
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi
+
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: restaurant-secrets
+type: Opaque
+data:
+  secret-key: eW91ci1zZWNyZXQta2V5LWNoYW5nZS10aGlz # base64 encoded
